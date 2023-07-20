@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+h1{
+    font-size:40px;
+}
+h2{
+    font-size:16px;
+    font-weight:500;
+    color: white;
+}
+h3{
+    font-size:32px;
+    text-transform: uppercase;
+    font-weight:500;
+}
+h4{
+    text-transform: uppercase;
+    font-weight:400;
+}
+
+/* Hero Section */
+
+.section-hero{
+    background-image:url(img/header.jpg) ;
+    background-size: cover;
+    height:768px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.section-hero h1,h2{
+    text-transform: uppercase;
+}
+
+.hero-content>h4{
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.hero-content>h4::after{
+    content:"";
+    height:2px;
+    width:40%;
+    position: absolute;
+    background: black;
+    bottom: 0;
+    left:30%;
+
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0px 24px;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    text-align: center;
+}
+
+.button-primary{
+    border: solid 1px black;
+    padding:16px 24px;
+    width: fit-content;
+}
+
+.button-primary:hover{
+    background-color: black;
+    color: white;
+    transition: all .4s;
+}
+
+.hero-footer{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background: black;
+    padding:24px;
+    gap:24px;
+}
+
+.button-secondary{
+    padding: 16px 16px;
+    background: white;
+    min-width: 140px;
+    border:solid 1px black;
+}
+
+.button-secondary:hover{
+    border:solid 1px white;
+    background-color: black;
+    color:white;
+    transition: all .4s;
+}
+
+/* Intro Section */
+
+.section-intro{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.intro-content{
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+    gap:16px;
+    width:80%;
+    height:560px;
+}
+
+.intro-context{
+    display: flex;
+    flex-direction:column;
+    gap:32px;
+    width:50%
+}
+
+.title{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    padding-bottom: 16px;
+}
+
+.intro-title::after{
+    content:"";
+    height:2px;
+    width:20%;
+    position: absolute;
+    background: black;
+    bottom: 0;
+    left:0;
+}
+
+.intro-image{
+    height: 100%;
+}
+
+.intro-image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.intro-banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/keyboard.jpg);
+    background-size: cover;
+    background-position: 100% 50%;
+    height: 400px;
+    width:100%;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:48px;
+}
+
+/* Portofolio Section */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:24px;
+    margin-top: 24px;
+}
+
+.context{
+    display: flex;
+    flex-direction:column;
+    gap:32px;
+    width:50%;
+    align-items: center;
+    text-align: center;
+}
+
+.title-centered::after{
+    content:"";
+    height:2px;
+    width:100%;
+    position: absolute;
+    background: black;
+    bottom: 0;
+    left:0;
+}
+
+.buttons-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:24px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:80%;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.cards{
+    overflow: clip;
+    transition: all .5s;
+}
+
+.card1{
+    width:30%;
+    height:240px;
+}
+
+.cards img{
+    height:100%;
+    width:100%;
+    object-position: 0% 0%;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.portofolio-banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/coffe.jpg);
+    background-size: cover;
+    background-position: 100% 50%;
+    height: 400px;
+    width:100%;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:48px;
+}
+
+/* About Us Section */
+
+
+.card2{
+    width:20%;
+    height:320px;
+    position: relative;
+    min-width: 120px;
+    transition: all .5s;
+}
+
+.card2::after{
+    content:"GRAPH BERRY";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: -60px;
+    left:0;
+    right:0;
+    text-align: center;
+    font-weight: 600;
+    padding: 16px;
+    color:white;
+    transition: all .5s;
+
+}
+
+.card2:hover.card2::after{
+    bottom:0;
+}
+
+
+.sub-title-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    width: 70%;
+}
+
+
+.sub-title{
+    width:30%;
+    min-width: 205px;
+    gap: 16px;
+}
+
+.sub-title>h3{
+    font-size: 24px;
+}
+
+.sub-title>.intro-describtion{
+    font-size: 14px;
+}
+
+.about-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    width:100%;
+    height: 200px;
+    gap:16px;
+}
+
+.subscribe>h3{
+    font-size: 24px;
+}
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 16px;
+    padding: 0px 16px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.form>.email{
+    width:600px;
+    background-color: black;
+    border:1px solid white;
+    padding: 16px;
+}
+
+/* Contact Us Section */
+
+.section-contact{
+    gap:80px;
+}
+
+.sub-icons{
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.form-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+}
+
+.input{
+    width:100%;
+    padding: 16px 16px;
+}
+
+ .form-input{
+    width: 40%;
+ }
+ 
+ .form-left{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width:100%;
+ }
+
+ .form-right{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-end;
+ }
+ .form-right>textarea{
+    height:152px;
+    resize: none;
+ }
+
+ .button-tertiary{
+    border: solid 1px black;
+    padding:8px 40px;
+}
+
+
+/* Footer */
+footer{
+    margin-top: 24px;
+    width: 100%;
+    height:320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: black;
+}
+
+footer>img{
+    width: 80px;
+    height:80px;
+}
+.icons{
+    display: flex;
+    gap:24px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 6px;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width:853px){
+    .form>.email{width:100%}
+}
+
+@media screen and (max-width:722px){
+    .card-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:660px){
+    .sub-title{text-align: center;}
+}
+
+.cards:hover img{
+    transform-origin: 50% 100%;
+    transform: scale(120%);
+    transition: all .5s;
+}
+
+.button-tertiary:hover{
+    background-color: black;
+    color: white;
+    transition: all .4s;
+}
+
+.icons>i{
+    border: solid 1px black;
+    padding:8px;
+    cursor: pointer;
+}
+
+.icons>i:hover{
+    border: solid 1px;
+    box-shadow: 0 0 7px white;
+}
